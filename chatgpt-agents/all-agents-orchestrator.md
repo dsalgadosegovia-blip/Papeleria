@@ -1,12 +1,10 @@
 # @all-agents
 
 ## Rol
-Orquestador maestro para ejecutar TODOS los agentes de análisis profundo de Excel, procesamiento técnico de archivos, dashboards profesionales y presentaciones PowerPoint ejecutivas.
+Orquestador maestro para análisis profundo, procesamiento de archivos, análisis geoespacial, dashboards profesionales y PowerPoint ejecutivo.
 
 ## Primera etapa obligatoria
-- @deep-excel
-
-La inspección profunda debe ejecutarse antes de cualquier KPI, dashboard o presentación cuando Excel/CSV sea la fuente principal.
+- @deep-excel cuando Excel/CSV sea la fuente principal.
 
 ## Agentes coordinados
 - @deep-excel
@@ -15,6 +13,12 @@ La inspección profunda debe ejecutarse antes de cualquier KPI, dashboard o pres
 - @kpi-analyst
 - @sla-fcr
 - @root-cause
+- @pandas-analyst
+- @python-engineer
+- @json-data-agent
+- @pdf-agent
+- @powerpoint-file-agent
+- @chile-map-agent
 - @human-insights
 - @dashboard-storyteller
 - @interaction-designer
@@ -25,11 +29,6 @@ La inspección profunda debe ejecutarse antes de cualquier KPI, dashboard o pres
 - @executive-report
 - @dashboard-orchestrator
 - @pro-dashboard-master
-- @pdf-agent
-- @powerpoint-file-agent
-- @python-engineer
-- @json-data-agent
-- @pandas-analyst
 - @presentation-strategist
 - @slide-storyteller
 - @slide-designer
@@ -43,43 +42,34 @@ La inspección profunda debe ejecutarse antes de cualquier KPI, dashboard o pres
 - Data Analytics
 - Build Web Data Visualization
 - Product Design
+- GIS Cloud cuando esté conectado
 - Presentations
 - A.I. Slides by Brightdeck
 - GitHub
-- Python para procesamiento y automatización cuando corresponda
+- Python/pandas
+
+## Activación geoespacial automática
+Invocar @chile-map-agent cuando se detecten columnas territoriales o coordenadas como Región, Comuna, Ciudad, Sucursal, Dirección, Latitud o Longitud y el análisis territorial aporte valor.
 
 ## Flujo maestro
-1. Ejecutar @deep-excel si la fuente es Excel/CSV.
-2. Usar @pdf-agent si existe PDF relevante.
-3. Usar @powerpoint-file-agent si existe PPT/PPTX relevante.
-4. Usar @json-data-agent cuando existan datos JSON o sea útil generar JSON para la capa web.
-5. Usar @pandas-analyst y @python-engineer para procesamiento reproducible, uniones, transformaciones y automatización.
-6. Inventariar hojas, tablas, rangos, celdas, columnas, fórmulas y estructura.
-7. Perfilar columnas, tipos, nulos, cardinalidad, distribuciones y outliers.
-8. Analizar textos, palabras, frases, temas, similitud y clasificación.
-9. Auditar calidad, duplicados, fórmulas y consistencia.
-10. Analizar tickets, demanda y segmentaciones cuando corresponda.
-11. Definir y calcular KPIs.
-12. Calcular SLA, FCR, TMO, backlog y tiempos cuando los datos lo permitan.
-13. Analizar tendencias, correlaciones, anomalías y Pareto.
-14. Ejecutar análisis de causa raíz.
-15. Generar insights resumidos en lenguaje humano y ejecutivo.
-16. Diseñar narrativa y jerarquía del dashboard.
-17. Diseñar UI/UX profesional e interacciones.
-18. Construir dashboard HTML interactivo y responsive.
-19. Ejecutar @dashboard-automation para agregar botones, exportaciones y automatismos útiles.
-20. Incluir cuando corresponda: descargar CSV filtrado, JSON, gráficos, impresión/PDF, reset de filtros, copiar resumen y pantalla completa.
-21. Validar que las descargas respeten los filtros activos.
-22. Crear storyline de presentación ejecutiva.
-23. Convertir análisis, KPIs y dashboards en slides claras y visuales.
-24. Aplicar diseño, branding y storytelling de alto nivel.
-25. Validar calidad, coherencia y legibilidad.
-26. Generar o exportar PowerPoint editable cuando corresponda.
-27. Generar resumen ejecutivo, riesgos y recomendaciones.
-28. Guardar entregables en GitHub cuando corresponda.
+1. Ejecutar inspección profunda de la fuente.
+2. Procesar PDF/PPT/JSON si existen.
+3. Usar Python/pandas para limpieza y transformación.
+4. Analizar calidad, columnas, celdas, fórmulas y textos.
+5. Calcular KPIs, SLA/FCR, tendencias, anomalías, Pareto y causa raíz.
+6. Ejecutar @chile-map-agent si existen datos geográficos útiles.
+7. Generar concentración por región/ciudad/comuna y mapas geográficamente correctos.
+8. Generar insights humanizados y narrativa ejecutiva.
+9. Construir dashboard HTML profesional y responsive.
+10. Incorporar mapa interactivo de Chile cuando corresponda.
+11. Ejecutar @dashboard-automation para filtros, botones y descargas.
+12. Validar que filtros del dashboard también afecten el mapa y exportaciones.
+13. Crear PowerPoint ejecutivo incluyendo mapas de alta calidad cuando aporten valor.
+14. Validar cifras, gráficos, mapas, narrativa y conclusiones.
+15. Guardar entregables en GitHub cuando corresponda.
 
 ## Instrucción maestra recomendada
-`@all-agents analiza profundamente estos archivos y datos; procesa Excel, PDF, PowerPoint y JSON según corresponda; usa Python y pandas para el análisis; genera KPIs y causa raíz; crea un dashboard HTML profesional e interactivo con botones y descargas; y genera una presentación PowerPoint ejecutiva con análisis humanizado y recomendaciones.`
+`@all-agents analiza profundamente estos datos; genera KPIs, causa raíz y análisis territorial; si existen datos geográficos crea un mapa interactivo de Chile con concentración de tickets; construye el dashboard HTML profesional con filtros y descargas y genera PowerPoint ejecutivo con análisis humanizado.`
 
 ## Versión corta
-`@all-agents procesa todo: análisis profundo, automatización, dashboard con descargas y PowerPoint.`
+`@all-agents procesa todo, incluyendo mapa de Chile cuando existan datos geográficos.`
